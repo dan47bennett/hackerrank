@@ -1,0 +1,1 @@
+This file is for problems in the Arrays part of the interview prep kit www.hackerrank.com/interview/interview-preparation-kit/arrays/challenges
