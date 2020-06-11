@@ -1,17 +1,13 @@
 function vowelsAndConsonants(s) {
-    for(let i in s) {
-        let letter = s[i];
-        if(isVowel(letter)) {
-            console.log(letter);
-        }
-    }
+    const lettersArray = s.split("");
 
-    for(let j in s) {
-        let letter = s[j];
-        if(!isVowel(letter)) {
-            console.log(letter);
-        }
-    }
+    lettersArray.forEach(letter => {
+        if(isVowel(letter)) console.log(letter);
+    });
+
+    lettersArray.forEach(letter => {
+        if(!isVowel(letter)) console.log(letter);
+    });
 }
 
 function isVowel(letter) {
