@@ -11,6 +11,12 @@ process.stdin.on('data', function (data) {
 
 const https = require('https');
 
+async function getData() {
+  const result = await https.get('');
+  
+}
+
+
 
 function getMovieTitles(substr) {
     const query = 'https://jsonmock.hackerrank.com/api/movies/search/?Title=' + substr;
@@ -29,19 +35,6 @@ function getMovieTitles(substr) {
       }).on("error", (err) => {
         console.log("Error: " + err.message);
       });
-
-      console.log('dataObject: ', dataObject);
-
-      let dataArray = dataObject.data;
-
-      console.log('dataArray: ', dataArray);
-
-
-}
-
-
-function getAllData(query) {
-    let a;
 }
 
 
